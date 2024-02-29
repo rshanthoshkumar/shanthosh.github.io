@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pinned-section">
+        <button onclick="scrollToSection('about-me')">About Me</button>
+        <button onclick="scrollToSection('experience')">Experience</button>
+        <button onclick="scrollToSection('projects')">Projects</button>
+        <button onclick="scrollToSection('achievements')">Achievements & Certificates</button>
+    </div>
+
+    <!-- About-Me -->
+    <div id="about-me" class="section-A">
+        <img src="name.webp" alt="My Name" class="aboutme-image">
+
+        <div class="intro-container">
+            <div class="my-gif">
+                <img src="my-pic.gif" alt="My Image">
+            </div>
+            <div class="intro-text">
+                <h1 class="headings1">Introduction</h1>
+                <p class="para">Seeking an internship program and Job where I could learn to meliorate my skills by giving my best to the company.</p>
+            </div>
+        </div>
+
+
+        <h1 class="headings2">Social Profiles</h1>
+        <div class="sp-image-container">
+            <a href="https://www.linkedin.com/in/shanthosh-kumar-r" target="_blank">
+                <img class="sp-image" src="linkedin black and white.webp" alt="Image 1">
+                <img class="sp-hover-image" src="linkedin.webp" alt="Hover Image 1">
+            </a>
+        </div>
+        <div class="sp-image-container">
+            <a href="https://github.com/rshanthoshkumar" target="_blank">
+                <img class="sp-image" src="github black and white.webp" alt="Image 1">
+                <img class="sp-hover-image" src="GitHub.webp" alt="Hover Image 1">
+            </a>
+        </div>    
+        <div class="sp-image-container">
+            <a href="https://www.instagram.com/awesome_shanthosh/" target="_blank">
+                <img class="sp-image" src="instagram black and white.webp" alt="Image 1">
+                <img class="sp-hover-image" src="Instagram.webp" alt="Hover Image 1">
+            </a>
+        </div>
+
+        <div class="intro-container">
+            <div class="my-gif">
+                <h1 class="headings2">My Resume</h1>
+                <a href="https://drive.google.com/file/d/1CcvsXxhDyL1guh-i1kAfOhLT_Rm7TNCv/view?usp=sharing" class="resume-button" target="_blank">Click Me</a>
+                <div class="projects-skills-box">
+                    <div class="projects-skills">
+                        <p class="no-highlight">8 Month</p>
+                        <p class="highlight">Internship Experience</p>
+                    </div>
+                    <div class="projects-skills">
+                        <p class="no-highlight">Completed</p>
+                        <p class="highlight">10+ Projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-text">
+                <h1 class="headings1">Education</h1>
+                <div class="edu-bg-box">
+                    <div class="edu-box">
+                        <h3 class="edu-size">M.Tech Integrated</h3>
+                        <h3>Software Engineering</h3>
+                        <h4 class="edu-institute">Vellore Institute Of Technology - Chennai</h4>
+                        <h4 class="mark-size"><i>CGPA - 7.95</i></h4>
+                        <h4 class="mark-size">Year: 2020 - Present</h4>
+                    </div>
+                <div class="edu-box">
+                    <h3 class="edu-size">Higher Secondary</h3>
+                    <h4 class="edu-institute">Sri Seshaas International Public School - Salem</h4>
+                    <h4 class="mark-size"><i>Percentage - 84.6%</i></h4>
+                    <h4 class="mark-size">Year: 2020</h4></div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="headings2">Technical Knowledge</h1>
+        <div class="skills">
+            <p class="skills-lang">Ruby</p>
+            <p class="skills-lang">Web Technology</p>
+            <p class="skills-lang">Machine Learning Algorithms</p>
+            <p class="skills-lang">OpenAI Tools</p>
+            <p class="skills-lang">Artificial Intelligence Models</p>
+            <p class="skills-lang">Java</p>
+            <p class="skills-lang">Python</p>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="section">
+        <h1 class="headings1">Experience</h1>
+        <div class="certificate-right-container">
+            <div class="certificate-disc-right">  
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h3>IT Intern at Ntrust Software & Services Pvt. Ltd.</h3>
+                        <p class="mark-size">Worked on R&D, pioneered AI advancements: Customized AI-powered ChatGPT Embedding model.</p>
+                        <p class="mark-size">Created a Fine Tuning model using ChatGPT API which automates the abstraction tasks.</p>
+                        <p class="mark-size">METAS's Llama-2 Fine Tuning model which runs offline.</p>
+                        <p class="mark-size">Developed an LLM using Lang chain and Python.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-img-right">
+                <div class="internship-image-container">
+                    <img src="Ntrust 2 month internship.webp" id="image1" class="active" alt="2 month internship at Ntrust"/>
+                    <img src="Ntrust 6 month internship.webp" id="image2" alt="6 month internship at Ntrust"/>
+                </div>
+                <div class="button-container">
+                    <div class="buttons">
+                        <button class="active" onclick="showImage(1)"></button>
+                        <button onclick="showImage(2)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificate-left-container">
+            <div class="certificate-img-left">
+                <img src="zebo.ai internship.webp" alt="2 month internship at Zebo.AI" class="internship-image">
+            </div>
+            <div class="certificate-disc-left">
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h3>AI Intern at Zebo.AI</h3>
+                        <p class="mark-size">Developed a model to find the aging signs of people.</p>
+                        <p class="mark-size">Trained over 15000 images to improve the model's accuracy.</p>
+                        <p class="mark-size">As the team head for the AI group comprising 15 students.</p>
+                        <p class="mark-size">built a heart Disease Predictive Model using Python and AI.</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="section">
+        <h1 class="headings2">Projects</h1>
+        <h2>Patent</h2>
+        <div class="certificate-right-container">
+            <div class="certificate-disc-right">
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h3>Controlling Of IOT Devices</h3>
+                        <h3>Virtual Nest - Home Automation Using Augmented Reality</h3>
+                        <p class="mark-size">My patented project revolutionizes household management through innovative technology. Introducing an IoT device integrated with augmented reality, users effortlessly control home appliances with a simple hand gesture. By leveraging machine learning algorithms, the device not only automates repetitive tasks but also optimizes efficiency by analyzing and adapting to users' daily activities, providing a seamless and intuitive home automation experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-img-right">
+                <img src="iot-project.webp" alt="Home automation using AR" class="internship-image">
+            </div>
+        </div> 
+    
+        <h2>Paper Publication</h2>
+        <div class="certificate-left-container">
+            <div class="certificate-img-left">
+                <img src="paper publication.webp" alt="Paper Publication on IJISRT" class="internship-image">
+            </div>    
+            <div class="certificate-disc-left">
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h3>IPFS Based Solution for Secure File Storage</h3>
+                        <h3 class="journal">Published on IJISRT(International Journal of Innovative Science and Research Technology)</h3>
+                        <p class="mark-size">Published a pioneering research paper unveiling an innovative solution that combines blockchain technology with the IPFS (InterPlanetary File System) protocol. This solution ensures robust and secure file storage mechanisms, promising groundbreaking advancements in data security and integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificate-right-container">
+            <div class="certificate-disc-right">  
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h2>Think Legal</h2>
+                        <p>Currently engaged in the development in a project aimed at providing solutions for law-related challenges via a website platform. Leveraging LangChain and Python, I'm constructing an LLM (Large Language Model) to enhance understanding and response accuracy. Backend operations utilize ChatGPT for seamless processing. Currently in the prototype phase, aiming for transformative legal assistance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-img-right">
+                <img src="think legal.webp" alt="2 month internship at Ntrust" class="internship-image">
+            </div>
+        </div>
+
+        <div class="certificate-left-container">
+            <div class="certificate-img-left">
+                <div class="iwin-container">
+                    <video controls>
+                        <source src="iwin-demovideo.webm" type="video/webm">
+                        <!-- Add more <source> elements for different video formats -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="certificate-disc-left">   
+                <div class="cert-desc-box">
+                    <div class="cert-desc">
+                        <h2>I-Win - Personalized Learning App</h2>
+                    <p>Introducing a personalized learning app designed to revolutionize education. Featuring a chatbot for instant assistance, the app empowers students to pursue goal-oriented learning. With performance tracking and comparative analysis, users stay motivated. Facilitating virtual connections for collaborative study, it fosters a supportive learning community, enhancing engagement and achievement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="achievements" class="section">
+        <h1 class="headings1">Certificates & Achievements</h1>
+        <h2>Artificial Intelligence Analyst by IBM</h2>
+        <p class="mark-size">Showcasing expertise in Watson AI. Proficient in knowledge discovery models, I've delved into computer vision, machine learning algorithms, natural language processing, and AI knowledge representation. Equipped with comprehensive skills, I'm poised to tackle complex AI challenges and drive innovation in the field.</p>
+        <img src="IBM certificate.webp" alt="IBM AI Analyst Certificate" class="internship-image">
+        </br></br>
+
+        <h2>Google cloud associative certification by GDSC(Google Developer Student Clubs)</h2>
+        <h4></h4>
+        <img src="GDSC Certificate.webp" alt="GDSC CLoud Computing Certificate" class="internship-image">
+        </br></br>
+
+        <h2>Artificial Intelligence by Verzeo</h2>
+        <h4></h4>
+        <img src="Verzeo certificate.webp" alt="Verzeo AI Certificate" class="internship-image">
+        </br></br>
+
+        <h2>ML and AI workshop by Innovations Technologies</h2>
+        <h4></h4>
+        <img src="AI Work shop.webp" alt="AI & ML workshop Certificate" class="internship-image">
+        </br></br>
+
+        <h2>Runner-up company at the 2nd Annual Indian National Space Settlement Design Competition</h2>
+        <img src="Space settlement.webp" alt="Space Settlement Certificate" class="internship-image">
+    </div>
+
+    <div>
+        <img src="thank you.webp" alt="Thank You" class="thankyou-image">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

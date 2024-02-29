@@ -1,0 +1,414 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.pinned-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f0c0cd2;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000; /* Ensures the pinned section is above other content */
+}
+
+
+.pinned-section button {
+    position: relative; /* Add relative positioning */
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2600a4;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pinned-section button:hover::after,
+.pinned-section button:active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -7px; /* Adjust the value to control the position of the underline */
+    height: 2px; /* Height of the underline */
+    background-image: linear-gradient(to right, #5100ff, #ffffff); /* Linear gradient from blue to white */
+}
+
+/* Optional: Adjust the underline transition */
+.pinned-section button::after {
+    transition: bottom 0.2s ease-in-out;
+}
+
+.section-A {
+    padding: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.section {
+    padding: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.aboutme-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.thankyou-image {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0px;
+}
+
+.socialprofile-image {
+    padding: 10px;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40px;
+}
+
+.internship-image {
+    max-width: 80%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.skills {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.skills-lang {
+    margin: 10px;
+}
+
+.para {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.edu-size {
+    font-size: 20px;
+}
+
+.mark-size {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.edu-institute {
+    font-size: 15px;
+    color: #e6e6e6;
+}
+
+.headings1 {
+    background: linear-gradient(to right, blue, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headings2 {
+    background: linear-gradient(to right, white, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* start */
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-gif {
+    flex: 0 0 calc(50% - 40px); /* Image takes up half of the container width minus padding */
+    padding-left: 20px; /* Add space to the right of the image */
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.intro-text {
+    flex: 0 0 calc(50% - 40px); /* Text takes up half of the container width minus padding */
+    padding-right: 20px; /* Add space to the left of the text */
+}
+
+  /* For smaller screens, stack elements vertically */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .my-gif, .intro-text {
+        flex: 1 1 100%; /* Full width for each element */
+        max-width: 100%; /* Full width for each element */
+        padding: 0; /* Remove padding */
+    }
+}
+/* end */
+
+/* start */
+.sp-image-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Add some space between images */
+}
+
+.sp-hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40px;
+}
+
+.sp-image-container:hover .sp-hover-image {
+    opacity: 1;
+}
+
+.sp-image-container a {
+    display: inline-block;
+    position: relative;
+}
+
+.sp-image-container a:hover {
+    text-decoration: none;
+}
+
+.sp-image {
+    max-width: 97px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40px;
+}
+/* end */
+
+/* start */
+.resume-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(to right, #00bfff, #aa00ff, #ff00fb);
+    border-radius: 25px;
+    transition: background 0.3s ease-in-out;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.resume-button:hover {
+    background: linear-gradient(to right, #9b30ff, #0055ff, #8a2be2);
+}
+/* end */
+
+/* start */
+.iwin-container {
+    max-width: 1000px; /* Set maximum width to prevent video overflow */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden; /* Hide horizontal overflow */
+}
+
+video {
+    width: 100%; /* Set the width of the video to fill its container */
+    height: auto; /* Maintain aspect ratio */
+}
+/* end */
+
+.edu-box {
+    background-color: #292929;
+    border:1px solid #acacac;
+    border-radius: 40px;
+    max-width: 100%;
+    padding: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.edu-bg-box {
+    max-width: fit-content;
+    margin: 0px auto;
+}
+
+.projects-skills {
+    background-color: #242121;
+    border:1px solid #575757;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 0px 30px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.projects-skills-box {
+    max-width: fit-content;
+    margin: 0px auto;
+    display: flex;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.no-highlight {
+    color: rgb(222, 222, 222);
+}
+
+/* start */
+.certificate-right-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificate-disc-right {
+    flex: 0 0 calc(40% - 10px); /* Image takes up half of the container width minus padding */
+    padding-left: 10px; /* Add space to the right of the image */
+    margin-top: 10px;
+
+}
+
+.certificate-img-right {
+    flex: 0 0 calc(60% - 10px); /* Text takes up half of the container width minus padding */
+    padding-right: 10px; /* Add space to the left of the text */
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+  /* For smaller screens, stack elements vertically */
+@media (max-width: 768px) {
+    .certificate-right-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .certificate-disc-right, .certificate-img-right {
+        flex: 1 1 100%; /* Full width for each element */
+        max-width: 100%; /* Full width for each element */
+        padding: 0; /* Remove padding */
+    }
+}
+/* end */
+
+/* start */
+.certificate-left-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificate-disc-left {
+    flex: 0 0 calc(35% - 25px); /* Image takes up half of the container width minus padding */
+    padding-left: 10px; /* Add space to the right of the image */
+}
+
+.certificate-img-left {
+    flex: 0 0 calc(65% - 55px); /* Text takes up half of the container width minus padding */
+    padding-right: 10px; /* Add space to the left of the text */
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 20px;
+}
+
+/* For smaller screens, rearrange elements */
+@media (max-width: 768px) {
+    .certificate-left-container {
+        flex-direction: column-reverse; /* Stack elements vertically and reverse their order */
+    }
+
+    .certificate-disc-left, .certificate-img-left {
+        flex: 1 1 100%; /* Full width for each element */
+        max-width: 100%; /* Full width for each element */
+        padding: 0; /* Remove padding */
+    }
+}
+/* end */
+
+/* start */
+.cert-desc {
+    background-color: #1a1a1a;
+    border:1px solid #3c3c3c;
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 0px 30px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.cert-desc-box {
+    max-width: fit-content;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+/* end */
+
+.journal {
+    color: #acacac;
+}
+
+/* start */
+.internship-image-container {
+    position: relative;
+    max-width: 70%; /* Set the width of your images */
+    height: auto; /* Allow height to adjust based on image size */
+    margin: 0 auto; /* Center the image container */
+}
+
+.internship-image-container img {
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    display: none;
+}
+
+.internship-image-container .active {
+    display: block;
+}
+
+.button-container {
+    margin-top: 10px; /* Adjust this value as needed */
+    text-align: center; /* Align buttons to the center */
+}
+
+.button-container .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    margin: 0 5px;
+    padding: 10px; /* Adjust button padding */
+    cursor: pointer;
+    border: none;
+    border-radius: 50%; /* Make the button round */
+    background-color: #ccc; /* Button background color */
+}
+
+.button-container button.active {
+    background-color: #007bff; /* Set the color for active button */
+    color: #fff;
+}
+/* end */
